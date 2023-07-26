@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+
+    <style>
+        body{
+            background-color:rgb(245, 174, 174);
+            margin: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .mycard{
+            background-color: white;
+            /* border: 2px solid red; */
+            width: 16%;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            /* x-offset y-offset blur size color */
+            box-shadow: 3px 3px 10px 2px #00000051;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div class="mycard">
+        <form>
+            <h3 class="form-title">Create Your Account</h3>
+            <hr>
+
+            <label for="">Name</label>
+            <input class="myinput" type="text" required>
+            <br><br>
+
+            <label for="">Email Address</label>
+            <input class="myinput" type="email" required>
+            <br><br>
+
+            <label for="">Password</label>
+            <input class="myinput" type="password" required>
+            <br><br>
+
+            <label for="">Confirm Password</label>
+            <input class="myinput" type="password" required>
+
+            <br><br>
+
+            <input type="checkbox">I Accept Terms & conditions
+            
+            <details>
+                <summary>Terms & Conditions</summary>
+                <p>Lorem ipsum dolor <mark>sit amet consectetur </mark> adipisicing elit. Necessitatibus, quidem adipisci perspiciatis
+                    optio harum assumenda repellendus quia ullam temporibus repellat magni neque, distinctio quaerat tempora
+                    sunt inventore laudantium accusantium cum.</p>
+            </details>
+            <br><br>
+
+                  <button class="mybtn">Create Account</button>
+                  <br><br>
+
+                
+        </form>
+    </div>
+
+   
+    
+
+    
+    
+</body>
+</html>

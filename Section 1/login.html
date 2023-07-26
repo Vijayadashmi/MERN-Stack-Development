@@ -5,28 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Login Page </title>
 
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+
     <style>
         body{
-            background-color: rgb(121, 244, 255);
+            /*background-color: rgb(121, 244, 255);*/
             margin: 0;
 
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+
+           /* background-image: linear-gradient(45deg, rgb(242, 162, 242), rgb(181, 123, 223), rgb(109, 109, 246), rgb(136, 232, 136), rgb(246, 127, 127), rgb(232, 232, 95));*/
+           /* background-image: url('https://static.vecteezy.com/system/resources/previews/003/655/528/large_2x/minimal-work-space-creative-flat-lay-of-workspace-desk-top-view-office-desk-with-keyboard-and-mouse-on-pastel-green-color-background-top-view-with-copy-space-flat-laygraphy-photo.jpg');*/
+            background-image: linear-gradient(0deg, rgba(237, 221, 221, 0.549), rgba(243, 218, 218, 0.456)), url('https://static.vecteezy.com/system/resources/previews/003/655/528/large_2x/minimal-work-space-creative-flat-lay-of-workspace-desk-top-view-office-desk-with-keyboard-and-mouse-on-pastel-green-color-background-top-view-with-copy-space-flat-laygraphy-photo.jpg');
+            background-size: cover;
         }
+
 
         .mycard{
             background-color: white;
             /* border: 2px solid red; */
-            width: 25%;
-            padding: 30px;
+            width: 20%;
+            padding: 40px;
             box-sizing: border-box;
             border-radius: 10px;
             /* x-offset y-offset blur size color */
             box-shadow: 3px 3px 10px 2px #00000051;
         }
 
+        .myinput{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .mybtn{
+            background-color:blueviolet;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            margin-top: 30px;
+            border: none;
+            border-radius: 5px;
+            transition-duration: 300ms;
+
+        }
+
+        .mybtn:hover{
+            background-color: rgb(50, 9, 88);
+            transform: translateY(-3px);
+        }
+
+        .mybtn:active{
+            outline: 3px solid #cb93ff;
+        }
+
+        .form-title{
+            font-family: Lato;
+            text-align: center;
+            font-size: 20px;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            margin-bottom: 50px;
+        }
+
+        .logo{
+            width: 70px;
+            margin: auto;
+            display: block;
+        }
+
+        *{
+            font-family: Lato;
+        }
 
     </style>
 </head>
@@ -34,17 +89,19 @@
 <body>
 
     <div class="mycard">
+
+        <img class= "logo" src="https://avatars.githubusercontent.com/u/26999847?s=280&v=4" alt="">
         <form>
             <h3 class="form-title">Login to continue</h3>
-            <hr>
+            
 
             <label for="">Email Address</label>
-            <input class="myinput" type="email">
+            <input class="myinput" type="email" placeholder="Enter Email Address">
 
             <label for="">Password</label>
-            <input class="myinput" type="password">
+            <input class="myinput" type="password" placeholder="Enter Password">
 
-            <button class="mybtn">Submit</button>
+            <button type="button" class="mybtn">Submit</button>
         </form>
     </div>
     
